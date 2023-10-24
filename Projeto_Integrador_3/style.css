@@ -1,0 +1,140 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: aliceblue;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.menu {
+    background-color: aliceblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+.menu li {
+    padding: 10px 20px;
+    list-style-type: none;
+}
+
+.menu li a {
+    text-decoration: none;
+    color: rgb(44, 20, 20);
+}
+
+.menu li:hover {
+    background-color: rgb(185, 223, 245);
+}
+
+.Logo img {
+    width: 4%;
+    height: 2%;
+    margin-top: -35px;
+}
+
+.margin-container {
+    background-color: rgb(233, 244, 248);
+    margin: 50px;
+    padding: 20px;
+    max-width: 800px; /* Adicionado para limitar a largura */
+    margin: 0 auto; /* Centralizar no meio da tela */
+}
+
+.margin-container img {
+    max-width: 100%; /* Redimensiona a imagem para a largura máxima do contêiner */
+    height: auto;
+    display: block;
+    margin: 0 auto; /* Centraliza a imagem horizontalmente */
+}
+
+.margin-container p {
+    color: rgb(44, 20, 20);
+    margin-top: 10px;
+}
+
+h2 {
+    text-align: center;
+}
+
+p {
+    font-size: 18px;
+    text-align: center;
+    padding: 10px;
+}
+
+.conheca-button {
+    margin-top: 10px; /* Corrigido o valor negativo para positivo */
+    background-color: rgb(120, 185, 208);
+    color: rgb(44, 20, 20);
+    border: none;
+    padding: 20px 10px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.conheca-button:hover {
+    background-color: rgb(74, 114, 206);
+}
+
+/* Estilos para dispositivos com largura de tela menor ou igual a 768px */
+@media (max-width: 768px) {
+    body {
+        font-size: 14px;
+    }
+    p{
+        text-align: center;
+    }
+
+    .menu {
+        text-align: center;
+    }
+    .menu ul {
+        padding: 0;
+    }
+    .menu li {
+        display: block;
+        margin-bottom: 10px;
+    }
+    .Logo {
+        text-align: center;
+    }
+    .Logo img {
+        width: 50px;
+        float: left;
+        margin-top: -60px;
+    }
+
+    .conheca-button {
+        margin: auto;
+        display: block;
+    }
+}
+
+@media(max-width: 820px) {
+    .conheca-button {
+        display: block;
+        margin: auto;
+    }
+    p {
+        text-align: center;
+    }
+
+
+}
